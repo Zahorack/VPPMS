@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zahorack/projects/c_projects_linux/signal-processing/circular_buffer/circular.c
+circular.h
+/home/zahorack/projects/c_projects_linux/signal-processing/circular_buffer/circular.h
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+
+/home/zahorack/projects/c_projects_linux/signal-processing/circular_buffer/circular.h
+stdint.h
+-
+
+/home/zahorack/projects/c_projects_linux/signal-processing/circular_buffer/main.c
+circular.h
+/home/zahorack/projects/c_projects_linux/signal-processing/circular_buffer/circular.h
+stdio.h
+-
+

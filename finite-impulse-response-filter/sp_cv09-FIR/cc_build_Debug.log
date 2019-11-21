@@ -1,0 +1,11 @@
+------------------------------  FIR.pjt - Debug  ------------------------------
+[c6713dskinit.c] "c:\ti\c6000\cgtools\bin\cl6x" -g -q -fr"C:/ti/myprojects/sp_cv09-FIR/Debug" -d"CHIP_6713" -mv6710 -@"../sp_cv09-FIR/Debug.lkf" "c6713dskinit.c"
+
+[Vectors_intr.asm] "c:\ti\c6000\cgtools\bin\cl6x" -g -q -fr"C:/ti/myprojects/sp_cv09-FIR/Debug" -d"CHIP_6713" -mv6710 -@"../sp_cv09-FIR/Debug.lkf" "Vectors_intr.asm"
+
+[Fir.c] "c:\ti\c6000\cgtools\bin\cl6x" -g -q -fr"C:/ti/myprojects/sp_cv09-FIR/Debug" -d"CHIP_6713" -mv6710 -@"Debug.lkf" "Fir.c"
+
+[Linking...] "c:\ti\c6000\cgtools\bin\cl6x" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\ti\myprojects\sp_cv09-FIR\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\Support\c6713dskinit.c"
+Source="..\Support\Vectors_intr.asm"
+Source="Fir.c"
+Source="..\Support\C6713dsk.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"C:\ti\myprojects\sp_cv09-FIR\Debug" -d"CHIP_6713" -mv6710
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"C:\ti\myprojects\sp_cv09-FIR\Release" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\FIR.map" -o".\Debug\FIR.out" -x -l"rts6700.lib" -l"dsk6713bsl.lib" -l"csl6713.lib"
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\FIR.map" -o".\Release\FIR.out" -x
+
