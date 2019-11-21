@@ -1,0 +1,24 @@
+//IIR coefficient file
+
+// stages - pocet filtrov v serii
+
+#define stages 5             	//number of 2nd-order stages
+
+int a[stages][3]=  {
+
+{16623,	0,	-16623},
+{32768,	-37751,	32768},
+{32768,  37751,	32768},
+{32768,	26169,	32768},
+{32768,	-26169,	32768}, };
+
+
+
+//b je iba 2rozmer lebo b0 je vzdy 1
+
+int b[stages][2]=       {    	//denominator coefficients    
+{0,		-13159},
+{-32608,	26307},
+{32608,		26307},
+{25251,		31455},
+{-25251,	31455} };

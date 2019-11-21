@@ -1,0 +1,11 @@
+------------------------------  IIR.pjt - Debug  ------------------------------
+[c6713dskinit.c] "c:\ti\c6000\cgtools\bin\cl6x" -g -q -fr"C:/Documents and Settings/student/Desktop/VPPMS/2019/3_Stvrtok_09-00/cv9/IIR_orig/Debug" -d"CHIP_6713" -mv6710 -@"Debug.lkf" "c6713dskinit.c"
+
+[IIR.c] "c:\ti\c6000\cgtools\bin\cl6x" -g -q -fr"C:/Documents and Settings/student/Desktop/VPPMS/2019/3_Stvrtok_09-00/cv9/IIR_orig/Debug" -d"CHIP_6713" -mv6710 -@"Debug.lkf" "IIR.c"
+
+[Vectors_intr.asm] "c:\ti\c6000\cgtools\bin\cl6x" -g -q -fr"C:/Documents and Settings/student/Desktop/VPPMS/2019/3_Stvrtok_09-00/cv9/IIR_orig/Debug" -d"CHIP_6713" -mv6710 -@"Debug.lkf" "Vectors_intr.asm"
+
+[Linking...] "c:\ti\c6000\cgtools\bin\cl6x" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

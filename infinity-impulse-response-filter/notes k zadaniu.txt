@@ -1,0 +1,40 @@
+uloha 2:
+
+2) algoritmus: Chebyshev Type II IIR
+5) Matlab prikazy pre copy/paste
+
+[z,p,k] = tf2zp(lp.tf.num, lp.tf.den);
+coef = zp2sos(z,p,k);
+coef = round(coef*2^15)
+
+*POZN. (lp.tf.num, lp.tf.den -> lp je z nazvu designu)
+
+
+
+
+uloha 5:
+
+- open project c:/ti/myprojects/IIR_orig.pjt
+- sablona .cof suboru pre zadavanie koeficientov: filter.cof v zlozke
+
+	priklad:
+
+		//IIR coefficient file
+	
+		#define stages 5             	//number of 2nd-order stages; pocet riadkov v stages premenej
+
+	
+		int a[stages][3]=       {    	//numerator coefficients    
+		{0, 0, 0},		//a10, a11, a12 for 1st stage
+		{32768, 67554, 34879},
+		{32768, 65468, 32792},
+		{32768, 63477, 30798},
+		{32768, 62296, 29616}, };
+	
+		int b[stages][2]=       {    	//denominator coefficients    
+		{-63670, 31005},
+		{-63266, 31181},
+		{-62662, 31511},
+		{-62177, 31961},
+		{-62115, 32489}, };
+		

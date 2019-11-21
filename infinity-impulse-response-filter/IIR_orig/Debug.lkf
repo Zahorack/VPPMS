@@ -1,0 +1,5 @@
+-z -q -c -m"./Debug/IIR.map" -o"./Debug/IIR.out" -x -i"c:/ti/c6000/bios/lib" -i"c:/ti/C6000/dsk6713/lib" -i"c:/ti/c6000/rtdx/lib" -i"c:/ti/c6000/cgtools/lib" -l"rts6700.lib" -l"dsk6713bsl.lib" -l"csl6713.lib"
+"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\cv9\IIR_orig\Debug\c6713dskinit.obj"
+"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\cv9\IIR_orig\Debug\IIR.obj"
+"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\cv9\IIR_orig\Debug\Vectors_intr.obj"
+"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\cv9\IIR_orig\C6713dsk.cmd"

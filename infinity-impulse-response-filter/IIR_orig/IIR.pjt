@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\cv9\IIR_orig\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="c6713dskinit.c"
+Source="IIR.c"
+Source="Vectors_intr.asm"
+Source="C6713dsk.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\cv9\IIR_orig\Debug" -d"CHIP_6713" -mv6710
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\cv9\IIR_orig\Release" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\IIR.map" -o".\Debug\IIR.out" -x -l"rts6700.lib" -l"dsk6713bsl.lib" -l"csl6713.lib"
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\IIR.map" -o".\Release\IIR.out" -x
+

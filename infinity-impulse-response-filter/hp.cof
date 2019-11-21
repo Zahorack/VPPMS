@@ -1,0 +1,17 @@
+//IIR coefficient file
+
+#define stages 5             	//number of 2nd-order stages
+
+int a[stages][3]=       {    	//numerator coefficients    
+{   2029,       -4058,        2029},		//a10, a11, a12 for 1st stage
+{},		//a20, a21, a22 for 2nd stage
+{},		//a30, a31, a32 for 3rd stage
+{},		//a40, a41, a42 for 4th stage
+{}  };
+
+int b[stages][2]=       {    	//denominator coefficients    
+{41463,       20161},		//b11, b12 for 1st stage
+{},		//b21, b22 for 2nd stage
+{},		//b31, b32 for 3rd stage
+{},		//b41, b42 for 4th stage
+{}         };	//b51, b52 for 5th stage
