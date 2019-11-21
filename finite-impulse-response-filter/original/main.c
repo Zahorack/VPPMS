@@ -9,23 +9,10 @@
 //#include "lp1500_256.cof"             // Low-pass filter frequency 1500 Hz
 //#include "bs790.cof"                  // Band-stop filter frequency 790 Hz
 //#include "BP1750.COF"                 // Band-pass filter frequency 1750 Hz
-//#include "sp_cv09-FIR/BS2700.COF"       // Band-stop filter frequency 2700 Hz
-
+#include "sp_cv09-FIR/BS2700.COF"       // Band-stop filter frequency 2700 Hz
+#include "dsk6713_aic23.h"		        //codec-dsk support file
 #include "circular.h"
-
-//Example Band-stop 2700 Hz sampling frequency 8000Hz
-
-#define N 89            	//number of coefficients
-
-const short coeffs[N] = {-14,23,-9,-6,0,8,16,-58,50,44,-147,119,67,-245,
-                        200,72,-312,257,53,-299,239,20,-165,88,0,105,
-                        -236,33,490,-740,158,932,-1380,392,1348,-2070,
-                        724,1650,-2690,1104,1776,-3122,1458,1704,29491,
-                        1704,1458,-3122,1776,1104,-2690,1650,724,-2070,
-                        1348,392,-1380,932,158,-740,490,33,-236,105,0,
-                        88,-165,20,239,-299,53,257,-312,72,200,-245,67,
-                        119,-147,44,50,-58,16,8,0,-6,-9,23,-14
-                        };
+Uint32 fs = DSK6713_AIC23_FREQ_8KHZ;    //set sampling rate
 
 circularBuffer_t data;
 
@@ -49,7 +36,7 @@ static int finite_impulse_response(int input){
 }
 
 
-static void periodic_interrupt()	   	//ISR - 8kHz
+interrupt void c_int11()	   	//ISR
 {
     output_sample(finite_impulse_response(input_sample()));
 }
@@ -58,6 +45,7 @@ void main()
 {
     circular_buffer_init(&data, N, sizeof(int));
 
+    comm_intr();               	//init DSK, codec, McBSP
     while(1);                  	//infinite loop
 
     circular_buffer_deinit(&data);
