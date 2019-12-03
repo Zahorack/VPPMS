@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zahorack/projects/c_projects_linux/signal-processing/fourier-transform/main.c
+stdio.h
+-
+math.h
+-
+stdint.h
+-
+

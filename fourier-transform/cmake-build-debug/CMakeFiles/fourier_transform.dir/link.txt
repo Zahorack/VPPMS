@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/fourier_transform.dir/main.c.o  -o fourier_transform -lm 

@@ -1,0 +1,8 @@
+------------------------------  DFT.pjt - Debug  ------------------------------
+[dft.c] "c:\ti\c6000\cgtools\bin\cl6x" -g -q -fr"C:/Documents and Settings/student/Desktop/VPPMS/2019/3_Stvrtok_09-00/cv10/DFT_orig/Debug" -d"CHIP_6713" -mv6710 -@"Debug.lkf" "dft.c"
+"dft.c", line 70: warning: expression has no effect
+
+[Linking...] "c:\ti\c6000\cgtools\bin\cl6x" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 1 Warnings, 0 Remarks.
