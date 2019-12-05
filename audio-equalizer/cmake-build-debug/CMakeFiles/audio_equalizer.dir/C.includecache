@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/circular.h
+stdint.h
+-
+
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/main.c
+circular.h
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/circular.h
+original/LP500.COF
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/LP500.COF
+original/BP1000.COF
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP1000.COF
+original/BP2000.COF
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP2000.COF
+original/BP4000.COF
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP4000.COF
+original/BP8000.COF
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP8000.COF
+original/BP16000.COF
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP16000.COF
+dsk6713_aic23.h
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/dsk6713_aic23.h
+
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP1000.COF
+
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP16000.COF
+
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP2000.COF
+
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP4000.COF
+
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/BP8000.COF
+
+/home/zahorack/projects/c_projects_linux/signal-processing/audio-equalizer/original/LP500.COF
+

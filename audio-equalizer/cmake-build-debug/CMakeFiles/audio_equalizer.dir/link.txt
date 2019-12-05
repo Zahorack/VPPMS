@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/audio_equalizer.dir/main.c.o  -o audio_equalizer 

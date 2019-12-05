@@ -1,0 +1,5 @@
+-z -q -c -m"./Debug/FIR.map" -o"./Debug/FIR.out" -x -i"c:/ti/c6000/bios/lib" -i"c:/ti/C6000/dsk6713/lib" -i"c:/ti/c6000/rtdx/lib" -i"c:/ti/c6000/cgtools/lib" -l"rts6700.lib" -l"dsk6713bsl.lib" -l"csl6713.lib"
+"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\Zadanie\Debug\c6713dskinit.obj"
+"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\Zadanie\Debug\Fir.obj"
+"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\Zadanie\Debug\Vectors_intr.obj"
+"C:\Documents and Settings\student\Desktop\VPPMS\2019\3_Stvrtok_09-00\Zadanie\Support\C6713dsk.cmd"
